@@ -76,8 +76,8 @@ const owner = "919142294671";
 const MODE = process.env.MODE;
 
 //const thinking = await client.sendMessage(m.chat, { text: 'Thinking...' }); 
-const BOT_NAME = process.env.BOT_NAME || 'GSS Botwa'
-const OWNER_NAME = process.env.OWNER_NAME || 'Goutam'
+const BOT_NAME = process.env.BOT_NAME || '🧚 *SHENU QUEEN*'
+const OWNER_NAME = process.env.OWNER_NAME || ' ⃞🌷𝗠𝗥.𝗦𝗜𝗧𝗛𝗨𝗠 𝗘𝗦𝗛𝗔𝗡💙⃝'
 const APIKEY = process.env.APIKEY;
 const mentionUser = [...new Set([...(m.mentionedJid || []), ...(m.quoted ? [m.quoted.sender] : [])])]
 
@@ -309,12 +309,12 @@ const reactionMessage = {
    Hi 👋 *${pushname}*
    
 ╭◯━━━  *Bot Info* ━━━◯
-│ 🤖 *Bot Name* : *GSS_BOTWA*
+│ 🦋 *Bot Name* : *💙SHENU QEEUN🌷⃝*
 │ 👤 *Owner Name* : *${OWNER_NAME}*
 │ 👨‍💻 *owner number* : *${owner}*
 │ 🚀 *Prefix* :  *${prefix}*
-│ ⏳ *Uptime* : *${hours}h ${minutes}m ${seconds}s*
-│ 🌐 *Mode* : *Public*
+│ 🤪 *Uptime* : *${hours}h ${minutes}m ${seconds}s*
+│ 💉 *Mode* : *Public*
  ╰◯━━━━━━━━━━━━◯       
  
 ╭◯━━━ *User Info* ━━━◯
@@ -358,7 +358,7 @@ const reactionMessage = {
 │ ➕ - .add @user
 │ 👑 - .promote @user
 │ 👤 - .demote @user
-│ 📣 - .group off / on
+│ 🔇 - .group off / on
 │ 🔗 - .linkgc
 │ 🕠 - closetime
 │ 🕥 - opentime
@@ -738,7 +738,7 @@ case 'fb': {
 👍 *Likes*: ${result.likes}
 👎 *Dislikes*: ${result.dislikes}
 👁️ *Views*: ${result.views}
-📥 [Download](result.videoUrl)
+🌷 [Download](result.videoUrl)
 `;
 
 
@@ -756,7 +756,7 @@ case 'fb': {
             {
                 video: fs.readFileSync(`./${randomName}`),
                 caption: tex,
-            },
+            },i
             { quoted: m }
         );
 
@@ -1121,7 +1121,7 @@ const igs = require('api-dylux')
 ▢ *🔖Username:* ${res.username}
 ▢ *👥Follower:* ${res.followersH}
 ▢ *🫂Following:* ${res.followingH}
-▢ *📌Bio:* ${res.description}
+▢ *📍Bio:* ${res.description}
 ▢ *🏝️Posts:* ${res.postsH}
 ▢ *🔗 Link* : https://instagram.com/${res.username.replace(/^@/, '')}
 └────────────`
@@ -2327,7 +2327,7 @@ var mems = []
 members.map(async adm => {
 mems.push(adm.id.replace('c.us', 's.whatsapp.net'))
 })
-client.sendMessage(from, {text: `\`\`\`「 ⚠️Warning⚠️ 」\`\`\`\n\nNobody is allowed to use bad words in this group, one who uses will be kicked immediately!`, contextInfo: { mentionedJid : mems }}, {quoted:m})
+client.sendMessage(from, {text: `\`\`\`「 ❌ Warning ⚠️ 」\`\`\`\n\nNobody is allowed to use bad words in this group, one who uses will be kicked immediately!`, contextInfo: { mentionedJid : mems }}, {quoted:m})
 } else if (args[0] === "off") {
 if (!antiToxic) return reply('Already deactivated')
 let off = nttoxic.indexOf(from)
